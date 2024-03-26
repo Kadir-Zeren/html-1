@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Seo acisindan inemli (165 karakter uzunlugunda bir aciklama) -->
     <meta name="description" content="Dunyanin en iyi kalemleri cw-kalem" />
+    <!-- Title'in yanindaki ligi icin favicon kullanilir -->
     <link rel="shortcut icon" href="./img/indir.png" type="image/x-icon" />
+
+    <!-- HTML kodunuzu stillendirme dosyasi ile baglantilisi -->
+    <link rel="stylesheet" href="stil.css" />
     <title>Recap</title>
+
+    <style>
+      /* internal CSS */
+      .par {
+        /* class ile erisim */
+        color: white;
+        background-color: red;
+      }
+      #container {
+        /* id ile erisim */
+        border: 2px solid yellowgreen;
+      }
+    </style>
   </head>
   <body>
     <h1>Bu bir H1 etiketidir</h1>
@@ -15,5 +32,39 @@
     <h4>Bu bir H4 etiketidir</h4>
     <h5>Bu bir H5 etiketidir</h5>
     <h6>Bu bir H6 etiketidir</h6>
+
+    <div id="container">
+      <p class="par">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+        nobis, molestias at cupiditate repellat perspiciatis quam veniam.
+        Praesentium, autem laboriosam nulla ducimus adipisci corrupti,
+        aspernatur nisi a eius, id atque.
+      </p>
+
+      <!-- Inline CSS -->
+      <p style="color: blueviolet; background-color: beige">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        eaque quae sequi fugiat, et corporis aliquam assumenda delectus ut
+        impedit.
+      </p>
+
+      <p class="par">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nesciunt
+        vel eveniet dolores quia!
+      </p>
+    </div>
+    <section>
+      Lorem ipsum <mark>dolor</mark> sit amet <u>consectetur,</u> adipisicing
+      elit. Consequuntur provident iure eos delectus alias.
+      <strong>Atque</strong> quaerat <b>molestiae</b> doloribus facilis
+      temporibus magnam assumenda ipsum rem inventore deleniti, praesentium
+      <em>tenetur</em> tempore <del>nesciunt?</del>
+
+      <br />
+      <article>Bu urunun fiyati <span style="color: red">500 TL</span></article>
+    </section>
+
+    <p>Suyun formulu H<sub>2</sub>O</p>
+    <p>Formul x<sub>2</sub>+ 3</p>
   </body>
 </html>
